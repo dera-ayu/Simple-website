@@ -1,0 +1,118 @@
+body, html{
+    height:1900px;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+  
+  }
+  
+  .pimg {
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+  }
+  
+  .pimg {
+    background-image:url('../img/travel.jpg');
+    min-height:100%;
+  }
+
+  .topnav {
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #C7A4BF;
+    text-align: center;
+    padding: 18px 50px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: transparent;
+    color: #7b506f;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: transparent;
+    color: black;
+  }
+
+
+  /* Three image containers*/
+  .column {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  .row {
+      padding-left: 20%;
+      padding-top: 190px;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+  .footer {
+    background-color: white; opacity: 0.95;
+    color: #7b506f;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 200px;
+  }
+
+  .footer a {
+    color: #7b506f;
+    text-align: center;
+    padding: 18px 50px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .footer a:hover {
+    color: #000;
+  }
+
+  .col {
+      float: left;
+      text-align: center;
+      padding-top: 1.5%;
+      width: 100%;
+      padding-right: 1%;
+      padding-left: 0%;
+      vertical-align: middle;
+    }
+  
+  .ro::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+  @media(max-width:568px){
+    .pimg1{
+      background-attachment:scroll;
+    }
+  }
